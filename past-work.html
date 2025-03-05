@@ -11,6 +11,7 @@
             background-color: #f8f9fa;
             color: #333;
             line-height: 1.6;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
         }
         header {
             background: linear-gradient(45deg, #2c3e50, #34495e);
@@ -35,22 +36,17 @@
             color: #3498db;
         }
         .gallery {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin: 0;
+            padding: 0;
         }
         .gallery img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            width: 100vw; /* Full viewport width */
+            height: 100vh; /* Full viewport height */
+            object-fit: cover; /* Maintain aspect ratio, cover the area */
+            display: block; /* Remove any default spacing */
+            border-radius: 0; /* Remove rounded corners for full-screen effect */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Retain subtle shadow */
+            margin: 0; /* Remove any margins */
         }
         .graphic {
             position: absolute;
