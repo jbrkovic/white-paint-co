@@ -2,16 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>White Paint Co.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Paint Co. - Home</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; text-align: center; }
-        h1 { color: #333; }
-        p { max-width: 600px; margin: 10px auto; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #3498db;
+        }
+        .intro {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .gallery {
+            max-width: 1000px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-    <h1>White Paint Co.</h1>
-    <p>Josh has over 10 years of experience painting, but took a bit of time off for the corporate world as an audit professional. Seeing the potential to branch out and start his own business was an attractive opportunity. Let my opportunity be your opportunity to paint your place with charm and precision.</p>
-    <p>Contact us: <a href="tel:5875002123">587.500.2123</a></p>
+    <header>
+        <h1>White Paint Co.</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home/Work</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="intro">
+        <p>Josh has over 10 years of experience painting, but took a bit of time off for the corporate world as an audit professional. Seeing the potential to branch out and start his own business was an attractive opportunity. Let my opportunity be your opportunity to paint your place with charm and precision.</p>
+    </div>
+    <div class="gallery">
+        <!-- Placeholder images; replace with your own URLs -->
+        <img src="https://via.placeholder.com/300x200?text=Completed+Project+1" alt="Painting Project 1">
+        <img src="https://via.placeholder.com/300x200?text=Completed+Project+2" alt="Painting Project 2">
+        <img src="https://via.placeholder.com/300x200?text=Completed+Project+3" alt="Painting Project 3">
+    </div>
+    <footer>
+        <p>&copy; 2025 White Paint Co. All rights reserved.</p>
+    </footer>
 </body>
 </html>
