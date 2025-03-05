@@ -6,26 +6,30 @@
     <title>White Paint Co. - Contact</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Open Sans', Arial, sans-serif;
             margin: 0;
             background-color: #f8f9fa;
             color: #333;
+            line-height: 1.6;
         }
         header {
-            background-color: #2c3e50;
+            background: linear-gradient(45deg, #2c3e50, #34495e);
             color: white;
             padding: 20px;
             text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         nav {
             background-color: #34495e;
             padding: 10px;
+            text-align: center;
         }
         nav a {
             color: white;
             text-decoration: none;
             margin: 0 20px;
-            font-weight: bold;
+            font-weight: 600;
+            transition: color 0.3s ease;
         }
         nav a:hover {
             color: #3498db;
@@ -35,37 +39,57 @@
             margin: 20px auto;
             padding: 20px;
             background-color: white;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .contact h2 {
+            color: #2c3e50;
+            text-align: center;
         }
         form {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 15px;
         }
         input, textarea {
-            padding: 10px;
+            padding: 12px;
             border: 1px solid #ddd;
-            border-radius: 5px;
+            border-radius: 6px;
+            font-family: 'Open Sans', Arial, sans-serif;
         }
         button {
-            padding: 10px;
+            padding: 12px;
             background-color: #3498db;
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 6px;
             cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
         }
         button:hover {
             background-color: #2980b9;
         }
+        .graphic {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            opacity: 0.2;
+            z-index: -1;
+        }
+        .graphic img {
+            width: 100px;
+            height: 100px;
+        }
         footer {
-            background-color: #2c3e50;
+            background: linear-gradient(45deg, #2c3e50, #34495e);
             color: white;
             text-align: center;
             padding: 10px;
             position: fixed;
             bottom: 0;
             width: 100%;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
         }
     </style>
 </head>
@@ -74,7 +98,8 @@
         <h1>White Paint Co.</h1>
     </header>
     <nav>
-        <a href="index.html">Home/Work</a>
+        <a href="index.html">Home</a>
+        <a href="past-work.html">Past Work</a>
         <a href="contact.html">Contact</a>
     </nav>
     <div class="contact">
@@ -87,8 +112,11 @@
             <button type="submit">Send Message</button>
         </form>
     </div>
+    <div class="graphic">
+        <img src="https://cdn-icons-png.flaticon.com/512/3073/3073009.png" alt="Paintbrush Icon"> <!-- Paintbrush graphic -->
+    </div>
     <footer>
-        <p>&copy; 2025 White Paint Co. All rights reserved.</p>
+        <p>© 2025 White Paint Co. All rights reserved.</p>
     </footer>
 </body>
 </html>
