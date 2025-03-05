@@ -6,60 +6,80 @@
     <title>White Paint Co. - Home</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Open Sans', Arial, sans-serif;
             margin: 0;
             background-color: #f8f9fa;
             color: #333;
+            line-height: 1.6;
         }
         header {
-            background-color: #2c3e50;
+            background: linear-gradient(45deg, #2c3e50, #34495e);
             color: white;
             padding: 20px;
             text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         nav {
             background-color: #34495e;
             padding: 10px;
+            text-align: center;
         }
         nav a {
             color: white;
             text-decoration: none;
             margin: 0 20px;
-            font-weight: bold;
+            font-weight: 600;
+            transition: color 0.3s ease;
         }
         nav a:hover {
             color: #3498db;
         }
-        .intro {
-            max-width: 800px;
+        .content {
+            max-width: 1000px;
             margin: 20px auto;
             padding: 20px;
             background-color: white;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
-        .gallery {
-            max-width: 1000px;
-            margin: 20px auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
+        .intro {
+            text-align: center;
+            padding: 20px;
         }
-        .gallery img {
-            width: 300px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        .intro p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .graphic {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            opacity: 0.2;
+            z-index: -1;
+        }
+        .graphic img {
+            width: 100px;
+            height: 100px;
         }
         footer {
-            background-color: #2c3e50;
+            background: linear-gradient(45deg, #2c3e50, #34495e);
             color: white;
             text-align: center;
             padding: 10px;
             position: fixed;
             bottom: 0;
             width: 100%;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
         }
     </style>
 </head>
@@ -68,20 +88,25 @@
         <h1>White Paint Co.</h1>
     </header>
     <nav>
-        <a href="index.html">Home/Work</a>
+        <a href="index.html">Home</a>
+        <a href="past-work.html">Past Work</a>
         <a href="contact.html">Contact</a>
     </nav>
-    <div class="intro">
-        <p>Josh has over 10 years of experience painting, but took a bit of time off for the corporate world as an audit professional. Seeing the potential to branch out and start his own business was an attractive opportunity. Let my opportunity be your opportunity to paint your place with charm and precision.</p>
+    <div class="content">
+        <div class="intro">
+            <p>With over ten years of experience painting precisely, I have discovered the simple formula for happy customers: following all of the guidance/requirements you provide, and showcasing those manners I learned whilst being born and raised in Calgary's SW.</p>
+            <p>&nbsp;</p> <!-- Whitespace/new line -->
+            <p>White Paint Co. is the perfect match for all of your interior needs.</p>
+        </div>
+        <div class="image-container">
+            <img src="0092.jpg" alt="White Paint Co. Living Room Project">
+        </div>
     </div>
-    <div class="gallery">
-        <!-- Placeholder images; replace with your own URLs -->
-        <img src="https://via.placeholder.com/300x200?text=Completed+Project+1" alt="Painting Project 1">
-        <img src="https://via.placeholder.com/300x200?text=Completed+Project+2" alt="Painting Project 2">
-        <img src="https://via.placeholder.com/300x200?text=Completed+Project+3" alt="Painting Project 3">
+    <div class="graphic">
+        <img src="https://cdn-icons-png.flaticon.com/512/3073/3073009.png" alt="Paintbrush Icon"> <!-- Paintbrush graphic -->
     </div>
     <footer>
-        <p>&copy; 2025 White Paint Co. All rights reserved.</p>
+        <p>© 2025 White Paint Co. All rights reserved.</p>
     </footer>
 </body>
 </html>
