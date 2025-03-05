@@ -55,8 +55,9 @@
             margin: 20px 0;
         }
         .image-container img {
-            max-width: 100%;
-            height: auto;
+            width: 50vw; /* Half of the viewport width */
+            max-width: 100%; /* Ensures it doesn’t exceed the container on very small screens */
+            height: auto; /* Maintains aspect ratio */
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
