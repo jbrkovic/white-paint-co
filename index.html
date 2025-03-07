@@ -11,7 +11,14 @@
             background-color: #f8f9fa;
             color: #333;
             line-height: 1.6;
-            padding-top: 160px; /* Add padding to account for fixed header (80px) and nav (80px total) */
+            padding-top: 120px; /* Adjusted to account for combined height of header (80px) and nav (40px) */
+        }
+        .top-bar {
+            position: fixed; /* Fix the entire top bar (header + nav) */
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000; /* Ensure it stays above other content */
         }
         header {
             background: linear-gradient(45deg, #2c3e50, #34495e);
@@ -19,11 +26,6 @@
             padding: 20px;
             text-align: center;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
             height: 80px; /* Fixed height for vertical centering */
             display: flex; /* Use flexbox to center content */
             justify-content: center; /* Center horizontally */
@@ -34,7 +36,7 @@
             position: absolute;
             top: 10px;
             left: 10px;
-            opacity: 0.2;
+            opacity: 0.5; /* Less transparent (50% opacity) */
         }
         .header-graphic img {
             width: 10vw; /* Responsive width (10% of viewport width) */
@@ -45,11 +47,6 @@
             background-color: #34495e;
             padding: 10px;
             text-align: center;
-            position: fixed;
-            top: 80px;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
         }
         nav a {
             color: white;
@@ -103,17 +100,19 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="header-graphic">
-            <img src="paint-roller-tray.jpg">
-        </div>
-        <h1>White Paint Co.</h1>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="past-work.html">Past Work</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    <div class="top-bar">
+        <header>
+            <div class="header-graphic">
+                <img src="paint-roller-tray.jpg" alt="Paint Roller Tray">
+            </div>
+            <h1>White Paint Co.</h1>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="past-work.html">Past Work</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
     <div class="content">
         <div class="intro">
             <p>With over ten years of painting precisely -- and through being <em>born and raised in Calgary</em> -- I have uncovered the simple formula for happy customers:</p> 
