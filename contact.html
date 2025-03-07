@@ -24,6 +24,10 @@
             left: 0;
             width: 100%;
             z-index: 1000;
+            height: 80px; /* Fixed height for vertical centering */
+            display: flex; /* Use flexbox to center content */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
         }
         nav {
             background-color: #34495e;
@@ -87,7 +91,7 @@
             top: 10%;
             left: 10%;
             opacity: 0.2;
-            z-index: -1;
+            z-index: 1001; /* Higher than header/nav to appear above */
         }
         .graphic img {
             width: 100px;
@@ -102,6 +106,7 @@
             bottom: 0;
             width: 100%;
             box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            font-size: 0.8em; /* Two sizes smaller than default (1em) */
         }
     </style>
 </head>
@@ -125,7 +130,7 @@
         </form>
     </div>
     <div class="graphic">
-        <img src="https://img.icons8.com/?size=100&id=13148&format=png" alt="Paintbrush Icon">
+        <img src="https://img.icons8.com/?size=100&id=13145&format=png" alt="Paint Roller Icon">
     </div>
     <footer>
         <p>© 2025 White Paint Co. All rights reserved.</p>
