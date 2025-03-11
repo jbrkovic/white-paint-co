@@ -11,14 +11,14 @@
             background-color: #f8f9fa;
             color: #333;
             line-height: 1.6;
-            padding-top: 120px; /* Adjusted to account for combined height of header (80px) and nav (40px) */
+            padding-top: 120px;
         }
         .top-bar {
-            position: fixed; /* Fix the entire top bar (header + nav) */
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            z-index: 1000; /* Ensure it stays above other content */
+            z-index: 1000;
         }
         header {
             background: linear-gradient(45deg, #2c3e50, #34495e);
@@ -26,22 +26,11 @@
             padding: 20px;
             text-align: center;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            height: 80px; /* Fixed height for vertical centering */
-            display: flex; /* Use flexbox to center content */
-            justify-content: center; /* Center horizontally */
-            align-items: center; /* Center vertically */
-            position: relative; /* For positioning the graphic */
-        }
-        .header-graphic {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            opacity: 0.5; /* Less transparent (50% opacity) */
-        }
-        .header-graphic img {
-            width: 10vw; /* Responsive width (10% of viewport width) */
-            max-width: 80px; /* Cap the size on large screens */
-            height: auto; /* Maintain aspect ratio */
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
         }
         nav {
             background-color: #34495e;
@@ -65,7 +54,7 @@
             background-color: white;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            margin-top: 20px; /* Additional margin for spacing below the fixed nav */
+            margin-top: 20px;
         }
         .intro {
             text-align: center;
@@ -80,9 +69,9 @@
             margin: 20px 0;
         }
         .image-container img {
-            width: 50vw; /* Half of the viewport width */
-            max-width: 500px; /* Caps the width to prevent it from becoming too large on wide screens */
-            height: auto; /* Maintains aspect ratio */
+            width: 50vw;
+            max-width: 500px;
+            height: auto;
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
@@ -95,16 +84,13 @@
             bottom: 0;
             width: 100%;
             box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
-            font-size: 0.8em; /* Two sizes smaller than default (1em) */
+            font-size: 0.8em;
         }
     </style>
 </head>
 <body>
     <div class="top-bar">
         <header>
-            <div class="header-graphic">
-                <img src="paint-roller-tray.jpg" alt="Paint Roller Tray">
-            </div>
             <h1>White Paint Co.</h1>
         </header>
         <nav>
@@ -116,7 +102,7 @@
     <div class="content">
         <div class="intro">
             <p>With over ten years of painting precisely -- and through being <em>born and raised in Calgary</em> -- I have uncovered the simple formula for happy customers.</p>
-            <p> </p> <!-- Whitespace/new line -->
+            <p> </p>
             <p><em><strong>White Paint Co. is the perfect match for all of your interior needs.</strong></em></p>
         </div>
         <div class="image-container">
